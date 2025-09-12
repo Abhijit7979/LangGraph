@@ -5,3 +5,9 @@ langchain-core
 langchain-community
 langchain-openai
 openai 
+langchain-anthropic
+anthropic
+python-dotenv
+rich
+langchain-groq
+groq
