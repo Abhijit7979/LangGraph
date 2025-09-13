@@ -11,3 +11,4 @@ python-dotenv
 rich
 langchain-groq
 groq
+pydantic 
