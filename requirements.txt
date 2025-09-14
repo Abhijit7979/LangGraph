@@ -12,3 +12,5 @@ rich
 langchain-groq
 groq
 pydantic 
+arxiv
+wikipedia
