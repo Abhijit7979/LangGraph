@@ -14,3 +14,4 @@ groq
 pydantic 
 arxiv
 wikipedia
+langgraph-cli[inmem]
