@@ -84,7 +84,7 @@ def make_alternative_graph():
         if state["messages"][-1].tool_calls:
             return "tools"
         else:
-            return END
+            return "end"
 
     graph_workflow = StateGraph(State)
 
@@ -92,7 +92,7 @@ def make_alternative_graph():
     graph_workflow.add_node("tools", tool_node)
     graph_workflow.add_edge("tools", "agent")
     graph_workflow.add_edge(START, "agent")
-    graph_workflow.add_conditional_edges("agent", should_continue)
+    graph_workflow.add_conditional_edges("agent", should_continue,{"tools":"tools","end":END})
 
     agent = graph_workflow.compile()
     return agent
