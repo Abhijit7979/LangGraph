@@ -1,6 +1,6 @@
 {
     "dependencies":["."],
-    "graph":{
+    "graphs":{
 
         "openai_agent":"./openai_agent.py:agent"
     },
