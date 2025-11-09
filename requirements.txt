@@ -15,3 +15,5 @@ pydantic
 arxiv
 wikipedia
 langgraph-cli[inmem]
+langchain_ollama 
+faiss-cpu
